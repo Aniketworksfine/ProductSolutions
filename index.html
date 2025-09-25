@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Group Order Feature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-screen">
+            <div class="status-bar">
+                <span>9:41</span>
+                <span>⚡ 🔋 📶</span>
+            </div>
+            
+            <div class="header">
+                <div class="back-btn">←</div>
+                <div class="restaurant-info">
+                    <div class="restaurant-name">Burger House</div>
+                    <div class="restaurant-cuisine">American, Fast Food • 30 mins</div>
+                </div>
+            </div>
+
+            <div class="notification" id="notification" style="display: none;">
+                <div class="notification-icon">✓</div>
+                <div class="notification-text">
+                    <span class="notification-user">Priya</span> just added 2 items
+                </div>
+            </div>
+
+            <div class="group-order-banner">
+                <div class="group-order-header">
+                    <div class="group-title">
+                        <span>👥 Group Order</span>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="live-badge">LIVE</div>
+                </div>
+                
+                <div class="participants">
+                    <div class="participant">
+                        <div class="participant-avatar">Y</div>
+                        <div>
+                            <div class="participant-name">You</div>
+                            <div class="participant-status">• ordering</div>
+                        </div>
+                    </div>
+                    <div class="participant">
+                        <div class="participant-avatar">P</div>
+                        <div>
+                            <div class="participant-name">Priya</div>
+                            <div class="participant-status">• ordering</div>
+                        </div>
+                    </div>
+                    <div class="participant">
+                        <div class="participant-avatar">R</div>
+                        <div>
+                            <div class="participant-name">Raj</div>
+                            <div class="participant-status">• joined</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group-actions">
+                    <button class="action-btn share-btn">
+                        <span>🔗</span>
+                        <span>Share Link</span>
+                    </button>
+                    <button class="action-btn view-cart-btn">
+                        <span>🛒</span>
+                        <span id="group-cart-count">Group Cart (0)</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <div class="section-title">🔥 Popular Items</div>
+                
+                <div class="menu-item" data-price="249" data-name="Classic Burger">
+                    <div class="menu-item-info">
+                        <div class="item-name">Classic Burger</div>
+                        <div class="item-price">₹249</div>
+                        <div class="item-desc">Juicy beef patty with lettuce, tomato</div>
+                    </div>
+                    <button class="add-btn">ADD</button>
+                    <div class="added-by">Priya added</div>
+                </div>
+                
+                <div class="menu-item" data-price="149" data-name="Cheese Fries">
+                    <div class="menu-item-info">
+                        <div class="item-name">Cheese Fries</div>
+                        <div class="item-price">₹149</div>
+                        <div class="item-desc">Crispy fries with melted cheese</div>
+                    </div>
+                    <button class="add-btn">ADD</button>
+                </div>
+                
+                <div class="menu-item" data-price="199" data-name="Veggie Wrap">
+                    <div class="menu-item-info">
+                        <div class="item-name">Veggie Wrap</div>
+                        <div class="item-price">₹199</div>
+                        <div class="item-desc">Fresh vegetables in a soft tortilla</div>
+                    </div>
+                    <button class="add-btn">ADD</button>
+                </div>
+            </div>
+
+            <div class="floating-cart">
+                <div class="cart-info">
+                    <div class="cart-count" id="cart-count">0 items</div>
+                    <div class="cart-total" id="cart-total">₹0</div>
+                </div>
+                <button class="view-group-cart">View Group Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
